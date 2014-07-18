@@ -1,0 +1,44 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, form, label, table, tr, td, article, aside, canvas, details, embed, footer, header, hgroup, menu, nav, section, article, aside, input, textarea, button {
+	.box-sizing;
+}
+
+p, ul {
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clearfix {
+	*zoom: 1;
+	&::before, &::after {
+		content: "";
+		display: table;
+	}
+	&::after {
+		clear: both;
+	}
+}
+
+a {
+	text-decoration: underline;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.disableHover {
+	&, * {
+		pointer-events: none !important;
+	}
+}

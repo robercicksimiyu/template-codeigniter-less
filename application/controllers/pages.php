@@ -41,7 +41,7 @@ class Pages extends CI_Controller {
 	 */
 	private function _genCSS() {
 		try {
-			$this->lessc->compileFile("less/style.less", "assets/styles/style.css");
+			$this->lessc->compileFile("less/application.less", "assets/styles/style.css");
 		} catch (exception $e) {
 			$this->data['lesscError'] = 'Fatal error: '.$e->getMessage();
 		}
